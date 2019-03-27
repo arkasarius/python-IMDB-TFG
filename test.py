@@ -16,6 +16,6 @@ if data:
         if movie:
             cast=movie.get('cast')
             for actor in cast:  
-                arguments = {"keywords": actor['name'],"limit":1,"print_urls":True}
+                arguments = {"keywords": actor['name'],"limit":10,"print_urls":True}
                 paths = response.download(arguments)   
                 print(paths)  
