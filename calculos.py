@@ -25,40 +25,40 @@ def extraerSublistaArchivo (archivo):
     f.close()
     return a
 
-folder="moviesdata"
-s='/'
-root = os.listdir(folder)
-for movie in root:
-    print(movie)
-    actors=os.listdir(folder+s+movie)
-    # print(actors)
-    for element in actors:
-        a=folder+s+movie+s+element
-        # print(a)
-        b=extraerSublistaArchivo(a)
-        # print(b[0])
-        # actores=os.listdir("actordata")
-        # for elem in actores:
-            nombre=elem.strip(".txt")
-            # print(nombre)
-            # datax=extraerSublistaArchivo("actordata"+s+elem)
-            for x in b:
-                for y in datax:
-                    if distanciaEuclidea(x,y) < 0.6:
-                    # print("distanciaEuclidea")
-                    # print(distanciaEuclidea(x,y))
-                    # print("Similitud coseno")
-                    # print(similitudCoseno(x,y))
-                        print(nombre+" pertenece al actor de "+a)
-        # c=extraerSublistaArchivo("actordata/Bruce Willis.txt")
-        # for x in b:
-        #     for y in c:
-        #         if distanciaEuclidea(x,y) < 0.5:
-        #             # print("distanciaEuclidea")
-        #             # print(distanciaEuclidea(x,y))
-        #             # print("Similitud coseno")
-        #             # print(similitudCoseno(x,y))
-        #             print("true")
+# folder="moviesdata"
+# s='/'
+# root = os.listdir(folder)
+# for movie in root:
+#     print(movie)
+#     actors=os.listdir(folder+s+movie)
+#     # print(actors)
+#     for element in actors:
+#         a=folder+s+movie+s+element
+#         # print(a)
+#         b=extraerSublistaArchivo(a)
+#         # print(b[0])
+#         # actores=os.listdir("actordata")
+#         # for elem in actores:
+#             nombre=elem.strip(".txt")
+#             # print(nombre)
+#             # datax=extraerSublistaArchivo("actordata"+s+elem)
+#             for x in b:
+#                 for y in datax:
+#                     if distanciaEuclidea(x,y) < 0.6:
+#                     # print("distanciaEuclidea")
+#                     # print(distanciaEuclidea(x,y))
+#                     # print("Similitud coseno")
+#                     # print(similitudCoseno(x,y))
+#                         print(nombre+" pertenece al actor de "+a)
+#         # c=extraerSublistaArchivo("actordata/Bruce Willis.txt")
+#         # for x in b:
+#         #     for y in c:
+#         #         if distanciaEuclidea(x,y) < 0.5:
+#         #             # print("distanciaEuclidea")
+#         #             # print(distanciaEuclidea(x,y))
+#         #             # print("Similitud coseno")
+#         #             # print(similitudCoseno(x,y))
+#         #             print("true")
         
 
 
