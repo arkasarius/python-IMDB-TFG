@@ -19,7 +19,8 @@ for unkownactor in apidata:
         count=0
         for subcara in act:
             for caratest in currentactor:
-                if(c.distanciaEuclidea(caratest,subcara)<1):
-                    count=count+1
+                if(c.similitudCoseno(caratest,subcara)>0.6):
+                    if(c.distanciaEuclidea(caratest,subcara)<1):
+                        count=count+1
         if(count>0):
             print('{} true per {}, {} vegades'.format(subactor.strip('.txt'),unkownactor.strip('.txt'),count))
