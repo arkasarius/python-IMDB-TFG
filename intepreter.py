@@ -10,6 +10,8 @@ actordata=os.listdir(g+s+movie)
 print(movie)
 print(apidata)
 print(actordata)
+DM=0.0 # 0.0 distancia minima posible
+AM=1.0 # 1.0 angle maxim posible 
 for unkownactor in apidata:
     act=c.extraerSublistaArchivo(m+s+movie+s+unkownactor)
     print("\n")
@@ -19,8 +21,10 @@ for unkownactor in apidata:
         count=0
         for subcara in act:
             for caratest in currentactor:
-                if(c.similitudCoseno(caratest,subcara)>0.6):
-                    if(c.distanciaEuclidea(caratest,subcara)<1):
+                if(c.similitudCoseno(caratest,subcara)>AM):
+                    if(c.distanciaEuclidea(caratest,subcara)<DM):
                         count=count+1
         if(count>0):
             print('{} true per {}, {} vegades'.format(subactor.strip('.txt'),unkownactor.strip('.txt'),count))
+        else:
+            print("no hi han cares valides per els coeficients AM : {} i DM: {} per l'actor {}".format(AM,DM,subactor.strip('.txt')))
