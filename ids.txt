@@ -1,0 +1,15 @@
+Figura 1 Representación de convolución pagina 19
+Figura 2: Clúster artista 00 Yo robot (Will Smith) pagina 28
+Figura 3: Muestra de errores típicos en extracción de caras pagina 34
+Figura 4: Muestra de código de IMDBPY pagina 36
+Figura 5: Muestra de algunos de los actores de Matrix pagina 36
+Figura 6: implementación de descarga de imágenes de actores pagina 37
+Figura 7: muestra de imágenes de Keanu Reeves pagina 38
+Figura 8: Representación de dos caras V y W en un espacio vectorial N = 128.  pagina 44
+Figura 9: Verdaderos positivos de Linda Fiorentino según coeficiente DM pagina 45
+Figura 10: Verdaderos positivos de Rip Torn según coeficiente DM pagina 46
+Figura 11: Imagen del sub set de comprobación para el actor Rip Torn pagina 47
+Figura 12: Verdaderos positivos de Linda Fiorentino según coeficiente AM. pagina 48
+Figura 13: Verdaderos positivos de Linda Fiorentino según coeficientes AM y DM. pagina 49
+Figura 14: Falsos positivos de Linda Fiorentino según coeficientes AM y DM. pagina 50
+Figura 15: muestra de resultados de los posibles casos para la película Ángeles y demonios. pagina 52

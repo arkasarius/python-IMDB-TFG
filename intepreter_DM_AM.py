@@ -55,7 +55,7 @@ while AM>=0:
 
     AM=AM-0.01
     # DM=1.2
-    n.append(AM)
+    n.append(1-AM)
 
     for unkownactor in apidata:
         act=c.extraerSublistaArchivo(m+s+movie+s+unkownactor)
@@ -70,7 +70,7 @@ while AM>=0:
                         if(c.distanciaEuclidea(caratest,subcara)<DM):
                             count=count+1
             if(count>0):
-                print('{} true per {}, {} vegades amb AM: {}'.format(subactor.strip('.txt'),unkownactor.strip('.txt'),count,AM))
+                print('{} true per {}, {} vegades amb AM: {}'.format(subactor.strip('.txt'),unkownactor.strip('.txt'),count,1-AM))
                 z.append(count)
             else:
                 z.append(0)
@@ -83,7 +83,7 @@ plt.plot(x,y,label="DM")
 plt.plot(n,z,label="AM")
 plt.title(actordata[0].strip(".txt"))
 plt.xlabel("Coeficiente DM AM")
-plt.ylabel("Verdaderos positivos")
+plt.ylabel("Falsos positivos")
 plt.grid()
 plt.legend()
 plt.show()

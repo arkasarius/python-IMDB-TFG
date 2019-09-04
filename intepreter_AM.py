@@ -22,7 +22,7 @@ while AM>=0:
 
     AM=AM-0.01
     # DM=1.2
-    x.append(AM)
+    x.append(1-AM)
 
     for unkownactor in apidata:
         act=c.extraerSublistaArchivo(m+s+movie+s+unkownactor)
@@ -37,7 +37,7 @@ while AM>=0:
                         if(c.distanciaEuclidea(caratest,subcara)<DM):
                             count=count+1
             if(count>0):
-                print('{} true per {}, {} vegades amb AM: {}'.format(subactor.strip('.txt'),unkownactor.strip('.txt'),count,AM))
+                print('{} true per {}, {} vegades amb AM: {}'.format(subactor.strip('.txt'),unkownactor.strip('.txt'),count,1-AM))
                 y.append(count)
             else:
                 y.append(0)
