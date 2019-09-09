@@ -1,7 +1,7 @@
 import calculos as c
 import os
 
-movie="Angeles y demonios"
+movie="Men in black"
 m="moviesdata"
 g="actordata"
 s='/'
@@ -10,8 +10,8 @@ actordata=os.listdir(g+s+movie)
 print(movie)
 print(apidata)
 print(actordata)
-DM=0.75 # 0.0 distancia minima posible
-AM=0.4 # 1.0 angle maxim posible 
+DM=0.95 # 0.0 distancia minima posible          0.95 valores aptos        
+AM=0.4 # 1.0 angle maxim posible                0.4  valores aptos       
 calculos=0
 for unkownactor in apidata:
     act=c.extraerSublistaArchivo(m+s+movie+s+unkownactor)
@@ -28,10 +28,5 @@ for unkownactor in apidata:
                         count=count+1
         if(count>0):
             print('{} Positivo para el cluster {}, {} positivos para coeficientes AM: {} y DM: {}'.format(subactor.strip('.txt'),unkownactor.strip('.txt'),count,AM,DM))
-            # calculos=calculos+1
-        # else:
-        #     calculos=calculos+1
-        #     pass
-            # print("no hi han cares valides per els coeficients AM : {} i DM: {} per l'actor {}".format(AM,DM,subactor.strip('.txt')))
 print("\n")
 print('{} pares de caras comparados para la pelicula {}'.format(calculos,movie))
