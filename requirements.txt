@@ -9,4 +9,4 @@ tqdm==4.28.1
 Pillow==6.0.0
 logger==1.4
 mxnet==1.4.0.post0
-tensorflow==1.13.1
+tensorflow==2.5.1
