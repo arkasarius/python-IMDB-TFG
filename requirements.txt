@@ -6,7 +6,7 @@ setuptools==39.1.0
 tensorflow_gpu==1.12.0
 opencv_python==3.4.3.18
 tqdm==4.28.1
-Pillow==6.0.0
+Pillow==9.0.1
 logger==1.4
 mxnet==1.4.0.post0
 tensorflow==1.13.1
